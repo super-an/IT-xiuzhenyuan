@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+	<title>九宫格</title>
+	<style>
+		html{font-size: 10px;}
+		body{margin: 0;}
+		ul{
+			list-style: none;
+		}
+		.wrap{
+			padding: 3% 0 0 3%;
+		}
+		.wrap:after{
+			content: '';
+			display: table;
+			width: 0;
+			height: 0;
+			clear: both;
+			visibility: hidden;
+		}
+		.wrap li{
+			position: relative;
+			float: left;
+			margin: 0 3% 3% 0;
+			/*padding-bottom: 30%;*/ /* padding百分比宽度依据的是元素的宽度 */
+			width: 30%;
+			height: 30vw;
+			border-radius: 10px;
+			background: orange;
+		}
+		.wrap li span{
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%,-50%);
+			 font-size: 15vw;
+			 color: #fff;
+			/*font-size: 15rem;*/
+		}
+
+	</style>
+</head>
+<body>
+	<ul class="wrap">
+		<li><span>1</span></li>
+		<li><span>2</span></li>
+		<li><span>3</span></li>
+		<li><span>4</span></li>
+		<li><span>5</span></li>
+		<li><span>6</span></li>
+		<li><span>7</span></li>
+		<li><span>8</span></li>
+		<li><span>9</span></li>
+	</div>
+</body>
+</html>
