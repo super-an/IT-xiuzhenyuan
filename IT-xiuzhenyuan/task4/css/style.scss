@@ -1,0 +1,87 @@
+@charset "UTF-8";
+
+body,h2{
+	margin: 0;
+}
+body{
+	color: #fff;
+	font-size: .16rem;
+	background: #eff0f4;
+}
+input,button{
+	border: none;
+	outline: none;
+}
+a{ text-decoration: none; }
+
+.header{
+	position: relative;
+	width: 100%;
+	height: .88rem;
+	line-height: .88rem;
+	background: #5fc0cd;
+	text-align: center;
+	.title{
+		font-weight: normal;
+		font-size: .32rem;
+	}
+	.close-btn,.signUp-btn{
+		position: absolute;
+		top: 0;
+		width: 1.2rem;
+		font-size: .28rem;
+		color: #fff;
+	}
+	.close-btn{ left: 0; }
+	.signUp-btn{ right: 0; }
+}
+.content{
+	.tel-bar,.pwd-bar{
+		position: relative;
+		margin-top: .16rem;
+		width: 100%;
+		height: 1rem;
+		background: #fff;
+		overflow: hidden;
+	}
+	.tel-bar:after,.pwd-bar:after{
+		position: absolute;
+		top: 50%;
+		left: 0;
+		margin-top: -.35rem;
+		content: '';
+		width: 1.16rem;
+		height: .7rem;
+		border-right: .02rem solid #ccc;
+	}
+	.tel-bar:after{
+		background: url(../img/iphone.png) no-repeat center;
+		background-size: .27rem;
+	}
+	.pwd-bar:after{
+		background: url(../img/lock.png) no-repeat center;
+		background-size: .29rem;
+	}
+	.tel-bar input,.pwd-bar input{
+		display: block;
+		width: 70%;
+		margin: .15rem 0 0 1.5rem;
+		height: .7rem;
+		font-size: .3rem;
+		color: #666;
+	}
+	.login-btn{
+		margin-top: .6rem;
+		width: 100%;
+		height: 1rem;
+		background: #5fc0cd;
+		font-size: .3rem;
+		color: #fff;
+		cursor: pointer;
+	}
+	.forget-link{
+		float: right;
+		margin: .1rem .1rem 0 0;
+		color: #5fc0cd;
+	}
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<div class="header">
+		<h2 class="title">登录</h2>
+		<a href="javascript:;" class="close-btn">关闭</a>
+		<a href="javascript:;" class="signUp-btn">注册</a>
+	</div>
+	<div class="content">
+		<form action="">
+			<div class="tel-bar">
+				<input type="text" name="telephone" placeholder="请输入手机号" />
+			</div>
+			<div class="pwd-bar">
+				<input type="password" name="password" placeholder="请输入密码" />
+			</div>
+			<button class="login-btn">登录</button>
+		</form>
+		<a href="javascript:;" class="forget-link">忘记密码？</a>
+	</div>
+</body>
+<script>
+	(function ( doc, win ) {
+            var docEl = doc.documentElement;
+            var resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize';
+            var recalc = function () {
+	            var clientWidth = docEl.clientWidth;
+	            if (!clientWidth) return;
+	            docEl.style.fontSize = 100 * (clientWidth / 750) + 'px';
+	        };
+	        if (!doc.addEventListener) return;
+	        win.addEventListener(resizeEvt, recalc, false);
+	        doc.addEventListener('DOMContentLoaded', recalc, false);
+        })( document, window );
+</script>
+</html>
